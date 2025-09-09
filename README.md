@@ -30,3 +30,6 @@ O objetivo deste site foi estudar Vite, React, TypeScript e Tailwind CSS, aplica
 ![Screenshot 2](./public/screenshot02.png)
 ![Screenshot 3](./public/screenshot03.png)
 ![Screenshot 4](./public/screenshot04.png)
+
+## Implantado
+Implantado com gh-pages: [https://wellifabio.github.io/receitas-web-2025/](https://wellifabio.github.io/receitas-web-2025/)
