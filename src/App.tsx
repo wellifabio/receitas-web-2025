@@ -23,7 +23,7 @@ function App() {
   const [tipo, setTipo] = useState("")
   const [img, setImg] = useState("")
   const [custoAproximado, setCustoAproximado] = useState(0)
-  const [id, setId] = useState<number|null>(null)
+  const [id, setId] = useState<number | null>(null)
   const [isEdit, setIsEdit] = useState(false)
 
   const fetchReceitas = async () => {
@@ -240,7 +240,20 @@ function App() {
               />
             </div>
             <div className="flex justify-end space-x-2">
-              <Button type="button" variant="outline" onClick={() => setOpen(false)}>
+              <Button type="button" variant="outline" onClick={() => {
+                setOpen(false)
+                setIsEdit(false)
+                setOpen(false)
+                setIsEdit(false)
+                fetchReceitas()
+                setNome("")
+                setIngredientes("")
+                setModoFazer("")
+                setTipo("")
+                setImg("")
+                setCustoAproximado(0)
+                setId(null)
+              }}>
                 Cancelar
               </Button>
               <Button type="submit" className="bg-green-600 hover:bg-green-700 text-white">
